@@ -24,7 +24,7 @@ body {
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid #0084ff;
     position: relative;
-    animation: flight 3s 1 ease-in-out,moveShadowDown 3.5s 3.5s infinite ease-in-out;  
+    animation: flight 3s 1 ease-in-out forwards,moveShadowDown 3.5s 3.5s infinite ease-in-out;  
 }
 
 
@@ -40,7 +40,6 @@ body {
 
 @keyframes moveShadowDown {
     0% {
-    
     }
     50% {
         box-shadow: 0 0px 30px 5px #55adff; 
@@ -136,5 +135,11 @@ footer{
     }
     to {
         transform: translateY(100vh);
+    }
+}
+
+@media (max-width: 700px){
+    .container {
+        width: 70%;
     }
 }
