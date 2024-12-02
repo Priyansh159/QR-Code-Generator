@@ -34,7 +34,7 @@ body {
         transform: translateY(100vh);
     }
     100% {
-        transform: translateY(5vh);
+        transform: translateY(1vh);
     }
 }
 
