@@ -1,0 +1,141 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    overflow: hidden;
+    color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(40, 40, 40, 0.9);
+    width: 30vw;
+    box-shadow: 0 0 0px 0px #0084ff;
+    z-index: 1; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(84, 84, 84, 0.132);
+    backdrop-filter: blur(1.3px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 1px solid #0084ff;
+    position: relative;
+    animation: flight 3s 1 ease-in-out,moveShadowDown 3.5s 3.5s infinite ease-in-out;  
+}
+
+
+
+@keyframes flight {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+@keyframes moveShadowDown {
+    0% {
+    
+    }
+    50% {
+        box-shadow: 0 0px 30px 5px #55adff; 
+    }
+    100% {
+    }
+}
+
+
+h1 {
+    font-size: 28px;
+    color: #0084ff;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 80%;
+    margin-top: 15px;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:hover{
+    animation-play-state: paused;
+}
+
+input[type="text"]:focus {
+    border-color: #0084ff;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #0084ff;
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #4faaff;
+    transform: scale(1.05);
+    color: rgb(0, 49, 92);
+}
+
+#downloadLink {
+    display: block;
+    margin-top: 20px;
+    color: #0084ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+img{
+    transition: all 0.3s ease;
+}
+img:hover{
+    border-radius: 30px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    right:10px;
+    color: #0084ff;
+    font-weight: 100;
+}
+
+#downloadLink:hover {
+    color: rgb(155, 175, 255);
+    text-decoration: underline;
+}
+
+.stars {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10vh);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
