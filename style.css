@@ -16,7 +16,6 @@ body {
     padding: 25px;
     border-radius: 20px;
     background: rgba(40, 40, 40, 0.9);
-    width: 30vw;
     box-shadow: 0 0 0px 0px #0084ff;
     z-index: 1; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
