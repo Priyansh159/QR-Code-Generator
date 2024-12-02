@@ -34,7 +34,7 @@ body {
         transform: translateY(100vh);
     }
     100% {
-        transform: translateY(0vh);
+        transform: translateY(5vh);
     }
 }
 
@@ -108,13 +108,13 @@ img:hover{
     border-radius: 30px;
 }
 
-/* footer{
+footer{
     position: absolute;
     bottom: 0px;
     right:10px;
     color: #0084ff;
     font-weight: 100;
-} */
+}
 
 #downloadLink:hover {
     color: rgb(155, 175, 255);
